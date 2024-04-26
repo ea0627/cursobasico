@@ -1,0 +1,440 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto";      /*fuente de la pagina, letra*/
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+header{
+    padding: 15px 0;            /*MArgen hacia adentro del elemento*/
+    position: fixed;            /*Menu fijo*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;                 /*posicion en el eje Z, traer al frente*/
+    background-color: white;
+
+}
+
+header .container{
+    display: flex; 
+    justify-content: space-between;   /*Acomoda elements con base en el eje x*/
+    align-items: center;            /*Acomoda elementos con base en el eje y*/
+}
+
+header .container .logo{
+    width: 100px;               /*tamaño del logo en px*/
+}
+
+header .container .hamb{
+    display: none;
+}
+
+header .container nav a{           /*propiedades de a dentro de container dentro del header*/
+    color: red;               /*color de letra rojo*/
+    text-decoration: none;      /*sin decoracion las letras, sin subrayado*/
+    margin: 0 15px;             /*Margen hacia afuera del elemento*/
+}
+
+footer.seccion{
+    background-color: black;
+    color: white;
+    padding-bottom: 0;
+}
+
+footer .barra-footer{
+    background-color: gray;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo-footer{
+    width: 100%;
+}
+
+footer ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer p{
+    padding-bottom: 30px;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer .redes{
+    font-size: 30px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+footer .redes a{
+    margin: 0 7.5px;
+}
+
+
+.boton{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cuadrado-perfecto{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.cuadrado-perfecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.boton.boton-rojo{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.boton.boton-negro{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.boton.boton-negro:hover{
+    color: white;
+    background-color: blue;
+    
+    
+}
+
+.boton.boton-rojo{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{                 /*clase container*/
+    width: 1140px;          /*Ancho de todas las clases container*/
+    margin: 0 auto;         /*Margen arriba y abajo de 0 y a los lados auto*/
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna-25{
+    width: 25%;
+}
+
+.columna-33{
+    width: 33.33%;
+}
+
+.columna-41{
+    width: 41.66%;
+}
+
+.columna-50{
+    width: 50%;
+}
+
+.empujar-50{
+    margin-left: 50%;
+}
+
+.empujar-58{
+    margin-left: 58.33%;
+}
+
+.empujar-0{
+    margin-left: 0;
+}
+
+#inicio{   /*Id Inicio, mas especifico que la Clase*/
+    position: relative; /*se puede mover el elemento con los atributos top, botom, lef, right, zindex: Mantiene su espacio*/
+}
+
+#inicio img{
+    width: 100%;
+    display: block;
+}
+
+#inicio .bloque-inicio{
+    position: absolute; /*se puede mover el elemento con los atributos top, botom, lef, right, zindex: Pierde su espacio*/
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    margin-left: -200px;
+}
+
+#inicio .bloque-inicio h1{
+    color: white;
+    font-size: 35px;
+}
+
+#inicio .bloque-inicio p{
+    color: white;
+    font-size: 16px;
+}
+
+#nosotros{
+    background-image: url(img/latas.jpg);
+    background-size: cover;
+}
+
+#nosotros p{
+    color: white;
+    text-align: center;
+    font-weight: 16px;
+    margin: 0;
+}
+
+#servicios .bloque-servicio{
+    border: 1px solid gray;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img{ 
+    width: 100%;
+}
+
+/*#servicios .bloque-servicio .bloque-img-servicio{ 
+
+}*/
+
+#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto{ 
+    padding-bottom: 56.25%;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio{
+    padding: 15px;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio h3{
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#galeria h4 {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#galeria img {
+    filter: grayscale(1); /*Todas las imagenes dentro del id Galeria en B/N */
+}
+
+#galeria .cuadrado-perfecto:hover img { /*al poner el cursor en la galeria*/
+    filter: grayscale(0); /*Todas las imagenes dentro del id Galeria en color*/
+}
+
+#galeria .cuadrado-perfecto:hover h4 { /*al poner el cursor en la galeria*/
+    display: none; /*el texto desaparece*/
+}
+
+#contactenos{
+    position: relative;
+}
+
+#contactenos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contactenos form{
+    padding: 60px;
+    background-color: red;
+}
+
+#contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+#contactenos form .form-block textarea{
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+#contactenos form .form-block.boque-ultimo{
+    margin-bottom: 0;
+}
+
+@media(max-width: 767px){
+
+    body{
+        font-size: 15px;
+    }
+    
+    header .container nav{           /*propiedades de a dentro de container dentro del header*/
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        transform: translateX(100%);                /*Se mueve el elemento fuera de la pantalla*/
+    }
+
+    header .container nav.open{
+        transform: translateX(0);    
+    }
+
+    header .container nav a{           /*propiedades de a dentro de container dentro del header*/
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    header .container .hamb{
+        display: block;
+        font-size: 40px;
+        color: red;
+        position: relative;
+    }
+
+    form .boton.boton-negro{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+        width: 100%;
+    }
+
+    footer p{
+        width: 100%;
+    }
+
+    footer .logo-footer{
+        width: 50%;
+    }
+
+    footer .redes{
+        justify-content: center;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .columna-mobile-50{
+        width: 50%;
+    }
+
+    .columna-mobile-100{
+        width: 100%;
+    }
+
+    .empujar-mobile-0{
+        margin-left: 0;
+    }
+
+    .sinpadding-mobile{
+        padding: 0;
+    }
+
+    #inicio{
+        height: 100vh;
+    }
+
+    #inicio img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #servicios .bloque-servicio {
+        margin-bottom: 15px;
+    }
+
+    #contactenos{
+        padding: 0;
+    }
+
+    #contactenos iframe{
+        position: relative;
+        height: 50vh;
+    }
+}
