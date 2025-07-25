@@ -45,7 +45,7 @@ cursobasico/
 
 ## 📸 Captura de pantalla
 
-![Vista previa](./assets/screenshot.png)
+![Vista previa](./assets/cursobasico.png)
 
 ---
 
